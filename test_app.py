@@ -18,3 +18,10 @@ class TestCalculator(unittest.TestCase):
     def test_divide_by_zero(self):
         with self.assertRaises(ValueError):
             divide(5, 0)
+
+
+    def test_add_fail(self):
+        self.assertEqual(add(2, 2), 5)   
+
+if __name__ == '__main__':
+    unittest.main()
